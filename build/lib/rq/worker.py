@@ -316,7 +316,7 @@ class Worker(object):
         within the given timeout bounds, or will end the work horse with
         SIGALRM.
         """
-        child_pid = Process()#
+        child_pid = Process()
         if child_pid == 0:
             self.main_work_horse(job)
         else:
